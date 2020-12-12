@@ -29,7 +29,6 @@ defmodule Daytree do
   end
 
   def sum_trees({trees, {_, _}}) do
-    IO.puts(Enum.sum(trees))
     Enum.sum(trees)
   end
 
