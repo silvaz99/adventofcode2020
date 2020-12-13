@@ -13,19 +13,6 @@ defmodule Dayfour do
 
   end
 
-  def sum_fields(input) do
-
-    #Enum.map(&Enum.sum(&1))
-    variable = Stream.chunk_by(input, fn x -> x != 0 end)
-    |> Enum.to_list()
-    |> Enum.map(&Enum.sum(&1))
-    |> Enum.count(fn number -> number >= 7 end)
-    IO.puts(variable)
-
-
-    variable
-  end
-
   def group_passports(row) do
 
     list = String.split(row, " ", trim: true)
